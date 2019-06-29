@@ -58,7 +58,7 @@ def plot_vertical(G, names, ranks):
 
 def main():
     G = read_int_list('data/dem-6-27-ints.txt')
-    G = G.subgraph(['WIL', 'BEN', 'GIL', 'HAR', 'SAN', 'SWA', 'BID'])
+    # G = G.subgraph(['WIL', 'BEN', 'GIL', 'HAR', 'SAN', 'SWA', 'BID'])
     names = list(G.nodes())
     A = nx.to_numpy_matrix(G, order=names)
     ranks = spring_rank(A)
